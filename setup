@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "🍰  updating gitconfig..."
+cp ./git/.gitconfig ~/.gitconfig
+git config --global credential.helper osxkeychain
+
+xcode-select --install
+
+touch ~/.vimrc
+echo "syntax on" >> ~/.vimrc
+
+# zsh
+echo "🎁  zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# nvm
+echo "🎁  nvm..."
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+
+echo " brew..."
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install zplug
+echo "export ZPLUG_HOME=/usr/local/opt/zplug" >> ~/.zshrc
+echo "source $ZPLUG_HOME/init.zsh" >> ~/.zshrc
+
+echo "rvm..."
+\curl -sSL https://get.rvm.io | bash -s stable --rails
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+echo "⛑  setting up node..."
+nvm install node
+
+echo "installing useful tools..."
+npm install -g diff-so-fancy
+npm install -g gulp
+npm install -g bower
+npm install -g spaceship-prompt
+brew install the_silver_searcher
+mkdir ~/.aliasme
+curl https://raw.githubusercontent.com/Jintin/aliasme/master/aliasme.sh > ~/.aliasme/aliasme.sh
+echo "source ~/.aliasme/aliasme.sh" >> ~/.zshrc
+
+echo "installing zsh plugins..."
+mkdir ~/.zplug
+mv terminal-preferences/init.zsh ~/.zplug/init.zsh
+zplug install
