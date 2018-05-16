@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "⚡️ installing vs code extensions..."
+code --install-extension ms-vscode.atom-keybindings
+code --install-extension WakaTime.vscode-wakatime
+code --install-extension tungvn.wordpress-snippet
+code --install-extension robinbentley.sass-indented
+code --install-extension rebornix.ruby
+code --install-extension castwide.solargraph
+code --install-extension ms-python.python
+code --install-extension alefragnani.project-manager
+code --install-extension pnp.polacode
+code --install-extension HvyIndustries.crane
+code --install-extension felixfbecker.php-debug
+code --install-extension monokai.theme-monokai-pro-vscode
+code --install-extension PKief.material-icon-theme
+code --install-extension onecentlin.laravel-blade
+code --install-extension Zignd.html-css-class-completion
+code --install-extension ecmel.vscode-html-css
+code --install-extension pkosta2005.heroku-command
+code --install-extension eamodio.gitlens
+code --install-extension donjayamanne.githistory
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension anseki.vscode-color
+code --install-extension bierner.color-info
+code --install-extension JerryHong.autofilename
+code --install-extension esbenp.prettier-vscode
