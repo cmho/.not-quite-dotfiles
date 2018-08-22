@@ -22,6 +22,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | b
 echo "📦 brew..."
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install zplug
+brew install yarn
 echo "export ZPLUG_HOME=/usr/local/opt/zplug" >> ~/.zshrc
 echo "source $ZPLUG_HOME/init.zsh" >> ~/.zshrc
 
@@ -41,6 +42,7 @@ npm install -g gulp
 npm install -g bower
 npm install -g spaceship-prompt
 brew install the_silver_searcher
+npm install -g tiny-care-terminal
 mkdir ~/.aliasme
 curl https://raw.githubusercontent.com/Jintin/aliasme/master/aliasme.sh > ~/.aliasme/aliasme.sh
 echo "source ~/.aliasme/aliasme.sh" >> ~/.zshrc
