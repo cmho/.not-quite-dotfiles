@@ -37,12 +37,11 @@ echo "⛑  setting up node..."
 nvm install node
 
 echo "⚡️ installing useful tools..."
-npm install -g diff-so-fancy
-npm install -g gulp
-npm install -g bower
-npm install -g spaceship-prompt
+yarn global add diff-so-fancy
+yarn global add gulp
+yarn global add spaceship-prompt
 brew install the_silver_searcher
-npm install -g tiny-care-terminal
+yarn global add tiny-care-terminal
 mkdir ~/.aliasme
 curl https://raw.githubusercontent.com/Jintin/aliasme/master/aliasme.sh > ~/.aliasme/aliasme.sh
 echo "source ~/.aliasme/aliasme.sh" >> ~/.zshrc

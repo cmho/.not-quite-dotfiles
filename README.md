@@ -9,6 +9,7 @@ This will:
 * Update your git settings
 * Install [oh-my-zsh](https://ohmyz.sh/)
 * Install [node.js and NVM (node version manager)](https://nodejs.org/en/)
+* Install [yarn](https://yarnpkg.com), the better way to install node packages
 * Install [homebrew](https://brew.sh/)
 * Install [ruby](https://www.ruby-lang.org/en/) and [ruby version manager](https://rvm.io/)
 * Install [zplug](https://github.com/zplug/zplug), a zsh plugin manager
