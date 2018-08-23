@@ -32,6 +32,7 @@ Next, you'll want to download [Visual Studio Code](https://code.visualstudio.com
 ## Productivity
 
 * [Trello](https://trello.com/platforms)
+* [Alfred](https://www.alfredapp.com/)
 
 ## Writing
 
@@ -69,3 +70,5 @@ Next, you'll want to download [Visual Studio Code](https://code.visualstudio.com
 
 * [DaisyDisk](https://daisydiskapp.com/)
 * [Renamer](https://renamer.com/)
+* [Bartender](https://www.macbartender.com/)
+* [Haptic Touch Bar](https://www.haptictouchbar.com/) - if you have the touchbar
